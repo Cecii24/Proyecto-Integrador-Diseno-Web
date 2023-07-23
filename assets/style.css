@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400&family=Lora:ital,wght@0,400;1,400;1,500&family=Signika:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+
+:root {
+  --violeta: #22223b;
+  --grisaseo: #4a4e69;
+  --lavanda: #9a8c98;
+  --claro: #c9ada7;
+  --beige: #f2e9e4;
+}
+
+/* 
+font-family: 'Hind Madurai', sans-serif;
+
+font-family: 'Lora', serif;
+
+H1: font-family: "Caveat";
+/* 
+
+-------------------------------- RESET -------------------------------- */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Hind Madurai", sans-serif;
+  /* border: 1px solid crimson; */
+}
+
+/* -------------------------------- HEADER -------------------------------- */
+
+header {
+  width: 100%;
+  height: 80px;
+  padding: 0 2rem;
+  background: var(--grisaseo);
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar__list {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar__list a {
+  color: var(--beige);
+  border: 1px solid var(--claro);
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  padding: 5px 15px;
+}
+
+.logo {
+  width: 100px;
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem;
+}
+
+.header__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header__icons img {
+  width: 25px;
+}
+
+.fa-user,
+.fa-cart-shopping {
+  color: var(--claro);
+  font-size: 1rem;
+}
+
+/* -------------------------------- RESPONSIVE NAVBAR -------------------------------- */
+
+.fa-bars {
+  font-size: 1.2rem;
+  display: none;
+}
+
+#toggle-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    background: var(--grisaseo);
+    width: 100%;
+    height: calc(100vh - 80px);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+
+  .fa-bars {
+    color: var(--claro);
+    display: block;
+  }
+
+  #toggle-menu:checked + .navbar__list {
+    display: flex;
+  }
+}
+
+/* -------------------------------- CART -------------------------------- */
+
+#toggle-cart {
+  display: none;
+}
+
+.cart::-webkit-scrollbar {
+  display: none;
+}
+
+.cart {
+  position: absolute;
+  right: 0;
+  top: 80px;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  overflow-y: scroll;
+  transform: translate(200%);
+  transition: all 0.5s ease-in-out;
+  z-index: 2;
+  display: none;
+}
+
+#toggle-cart:checked + .cart {
+  display: flex;
+  transform: translate(0);
+}
+/* -------------------------------- HERO -------------------------------- */
+
+#hero {
+  background-image: url(./hero_bg.png);
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  height: 400px;
+  padding: 0 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hero__container h1 {
+  color: var(--violeta);
+  font-family: "Caveat";
+  font-weight: 700;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.hero__container p {
+  color: var(--grisaseo);
+  font-weight: 400;
+  font-size: 1.5rem;
+  width: 50%;
+  text-align: center;
+}
+
+.hero__container span {
+  text-transform: uppercase;
+}
+
+.hero__container__buttons a {
+  padding: 5px 15px;
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem;
+  border: 2px solid var(--beige);
+
+  background: linear-gradient(to right, var(--violeta), var(--grisaseo));
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-family: "Lora", serif;
+  font-weight: 600;
+}
+
+/* -------------------------------- NOSE -------------------------------- */
+
+#nose {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nose img {
+  width: 70px;
+}
+
+.nose__container {
+  display: flex;
+}
+
+.container__cajas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cajas__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#nose span {
+  color: var(--claro);
+  font-size: 3rem;
+}
+
+/* -------------------------------- PRODUCTOS -------------------------------- */
+
+#productos {
+  background: var(--claro);
+  margin-top: 5rem;
+  text-align: center;
+}
+
+#productos h2 {
+  color: var(--beige);
+  font-family: "Caveat";
+  font-size: 3rem;
+  padding: 2rem 0;
+}
+
+.productos__container {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.img_product {
+  max-width: 200px;
+}
+
+.product__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.product__price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
