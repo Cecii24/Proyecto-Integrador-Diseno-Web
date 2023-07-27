@@ -22,7 +22,6 @@
 
 body {
   background: var(--violeta);
-  overflow: hidden;
 }
 
 #login {
@@ -39,7 +38,6 @@ body {
 }
 
 .form__top {
-  display: flex;
   position: relative;
   right: 180px;
   bottom: 30px;
@@ -59,7 +57,7 @@ body {
   gap: 1.5rem;
 }
 
-.form_signup {
+.form__bottom {
   width: 100%;
   padding: 1rem;
   border-top: 2px solid var(--beige);
@@ -68,7 +66,7 @@ body {
 }
 
 input {
-  padding: 0.7rem;
+  padding: 0.8rem 2rem;
   border: 1px solid var(--claro);
   border-radius: 2rem;
   -webkit-border-radius: 2rem;
@@ -80,16 +78,22 @@ input {
 
 h2 {
   color: var(--claro);
+  text-transform: uppercase;
 }
 
 p,
-.form_signup a {
+.form__bottom a {
   color: var(--claro);
 }
 
-.form_signup a:hover {
+.form__bottom a:hover {
   font-weight: 600;
   text-decoration: underline;
+  transition: 0.1s ease;
+  -webkit-transition: 0.1s ease;
+  -moz-transition: 0.1s ease;
+  -ms-transition: 0.1s ease;
+  -o-transition: 0.1s ease;
 }
 
 .login__button {
@@ -107,6 +111,21 @@ p,
   border: none;
   font-weight: 600;
   cursor: pointer;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+
+input:active,
+input:focus {
+  border: 2px solid var(--violeta);
+  transition: 0.1s ease;
+  -webkit-transition: 0.1s ease;
+  -moz-transition: 0.1s ease;
+  -ms-transition: 0.1s ease;
+  -o-transition: 0.1s ease;
 }
 
 i {
