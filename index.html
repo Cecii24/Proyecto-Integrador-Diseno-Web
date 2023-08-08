@@ -28,7 +28,12 @@
         <input type="checkbox" id="toggle-cart" />
 
         <div class="cart">
-          <p>Tu carrito está vacío</p>
+          <div class="cart__container">
+            <h3>Carrito de compras</h3>
+            <div class="cart__line"></div>
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p>No hay productos en el carrito.</p>
+          </div>
         </div>
       </nav>
     </header>
@@ -48,7 +53,7 @@
       </section>
 
       <section id="nose">
-        <div class="nose__container cajas">
+        <div class="nose__container">
           <div class="container__cajas">
             <span>1</span>
             <div class="cajas__info">
@@ -79,7 +84,7 @@
       </section>
 
       <section id="productos">
-        <h2>Nuestros Productos</h2>
+        <h1>Nuestros Productos</h1>
 
         <div class="productos__container">
           <!-- PRODUCTO 1 -->
@@ -168,7 +173,85 @@
             </div>
           </div>
         </div>
+        <button>Ver más</button>
+      </section>
+
+      <section id="servicios">
+        <h1>Nuestros Servicios</h1>
+
+        <div class="servicios__container">
+          <div class="servicios_info">
+            <ul>
+              <li>Decoración en Bodas y Eventos:</li>
+            </ul>
+            <p>Nos encargamos del diseño floral de tu boda o evento. Llena tu boda de flores y dale ese toque mágico y diferente. Creamos ambientes florales de distintos tipos (con flor fresca, con flor preservada, de estilo bohemio, clásico, romántico...)</p>
+
+            <ul>
+              <li>Suscripción mensual:</li>
+            </ul>
+            <p>Suscribite a nuestro envío mensual donde vas a recibir una caja llena de sorpresa y distintos productos de nuestra tienda. Todos los meses vas a recibir algo diferente, entre ramos de flores, decoraciones para tu hogar y mucho más! Además vas a juntar puntos y obtener descuentos para tus compras.</p>
+
+            <ul>
+              <li>Tienda abierta todo el año:</li>
+            </ul>
+            <p>Visitá nuestra tienda en cualquier momento, podrás comprar ramos de flores, centros de mesa, flores secas y todo lo que necesitas para decorar tu hogar o hacer un regalo especial.</p>
+          </div>
+
+          <div class="servicios_imagen">
+            <img src="./assets/img_hero/pexels-tara-winstead-6479546.jpg" />
+          </div>
+        </div>
+      </section>
+
+      <section id="nosotros">
+        <div class="nosotros__container">
+          <div>
+            <img src="./assets/nosotros.jpg" alt="" />
+          </div>
+          <div class="nosotros_texto">
+            <h2>Hola!</h2>
+
+            <p>Mi nombre es María Pía.</p>
+
+            <p>Me fascina cultivar flores y trabajar con ellas. Siento que así conecto con los ciclos naturales mientras las veo crecer y brotar. Eso me proporciona una gran calma y fortaleza.</p>
+
+            <p>Aplico prácticas orgánicas en un esfuerzo por cuidar y respetar nuestro planeta.</p>
+          </div>
+        </div>
       </section>
     </main>
+
+    <footer id="contacto">
+      <div class="contacto_container">
+        <form class="formulario">
+          <h3>Dejanos tu mensaje</h3>
+
+          <div class="form_top">
+            <input type="text" placeholder="Nombre" required />
+            <input type="text" placeholder="Apellido" />
+          </div>
+
+          <div class="form_bottom">
+            <input type="number" placeholder="Teléfono" />
+            <input type="email" placeholder="Email" required />
+          </div>
+          <textarea name="" id="" rows="10" maxlength="500" required></textarea>
+          <input type="submit" value="Enviar" />
+        </form>
+
+        <div class="contacto_info">
+          <ul>
+            <li><i class="fa-solid fa-location-dot"></i> Av. Juan Bautista Justo 2487</li>
+            <li><i class="fa-solid fa-clock"></i> Lunes a Sábado de 9 a 19 hs</li>
+            <li><i class="fa-solid fa-phone"></i> 011 59646882</li>
+            <li><i class="fa-solid fa-envelope"></i> info@mariapia.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d205.27529601921532!2d-58.44345160524346!3d-34.59392567254027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5f5a2135cb5%3A0x1612b4fdf501efbb!2sAv.%20Juan%20Bautista%20Justo%202487%2C%20C1414CXA%20CABA!5e0!3m2!1ses!2sar!4v1691275880833!5m2!1ses!2sar" width="800" height="300" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </footer>
   </body>
 </html>
