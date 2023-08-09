@@ -51,7 +51,7 @@ header {
 }
 
 .navbar__list {
-  padding-right: 5rem;
+  padding-right: 15rem;
   display: flex;
   gap: 1rem;
 }
@@ -120,6 +120,10 @@ header {
 
   #toggle-menu:checked + .navbar__list {
     display: flex;
+  }
+
+  .navbar__list {
+    padding-right: 0;
   }
 }
 
@@ -197,8 +201,7 @@ header {
   background-image: url(./hero_bg.png);
   background-position: center;
   background-size: cover;
-  height: 400px;
-  padding: 0 3rem;
+  padding: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -223,7 +226,7 @@ header {
 }
 
 .hero__container p {
-  color: var(--grisaseo);
+  color: var(--violeta);
   font-weight: 400;
   font-size: 1.5rem;
   width: 50%;
@@ -304,7 +307,7 @@ header {
 /* -------------------------------- PRODUCTOS -------------------------------- */
 
 #productos {
-  background: var(--claro);
+  background: var(--violeta);
   margin-top: 5rem;
   text-align: center;
 }
@@ -348,8 +351,10 @@ header {
 /* -------------------------------- SERVICIOS -------------------------------- */
 
 #servicios {
-  margin: 7rem auto;
-  padding: 0 5rem;
+  margin: 7rem 5rem;
+  padding: 5rem;
+  flex-direction: column;
+  border: 1px solid var(--claro);
 }
 
 .servicios__container {
@@ -357,7 +362,6 @@ header {
   margin-top: 3rem;
   max-width: 1200px;
   display: flex;
-  border: 1px solid var(--beige);
 }
 
 #servicios h1 {
@@ -389,18 +393,25 @@ header {
 
 /* -------------------------------- NOSOTROS -------------------------------- */
 
+#nosotros {
+  margin-top: 200px;
+  background: var(--violeta);
+}
+
 .nosotros__container {
   margin: 0 auto;
   max-width: 1000px;
+  height: 450px;
   padding: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .nosotros__container img {
-  width: 400px;
+  width: 350px;
+  border: 1px solid var(--beige);
 }
 
 .nosotros__container h2 {
@@ -411,7 +422,7 @@ header {
 }
 
 .nosotros__container p {
-  color: var(--grisaseo);
+  color: var(--beige);
   text-align: center;
   line-height: 1.5rem;
   margin-bottom: 0.5rem;
@@ -427,8 +438,7 @@ header {
 /* -------------------------------- CONTACTO -------------------------------- */
 
 #contacto {
-  background: var(--violeta);
-  margin: 0 auto;
+  margin: 100px auto;
   padding: 5rem;
 }
 
