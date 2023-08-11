@@ -53,8 +53,8 @@
         </div>
       </section>
 
-      <section id="nose">
-        <div class="nose__container">
+      <section id="about_info">
+        <div class="about_info_container">
           <div class="container__cajas">
             <span>1</span>
             <div class="cajas__info">
@@ -90,91 +90,97 @@
         <div class="productos__container">
           <!-- PRODUCTO 1 -->
           <div class="product">
-            <img src="./assets/productos/producto_ramo de flores.jpg" alt="Ramo" class="img_product" />
+            <img src="./assets/productos/ramo de flores.jpg" alt="Ramo" class="img_product" />
 
             <div class="product__info">
               <h3>Ramos de Flores</h3>
-              <p>Precio</p>
             </div>
 
             <div class="product__price">
+              <p>Precio</p>
               <span>$7000</span>
             </div>
+            <button>Comprar</button>
           </div>
 
           <!-- PRODUCTO 2 -->
 
           <div class="product">
-            <img src="./assets/productos/pexels-olya-prutskova-8976493.jpg" alt="Ramo" class="img_product" />
+            <img src="./assets/productos/centro de mesa.jpg" alt="Ramo" class="img_product" />
 
             <div class="product__info">
               <h3>Centros de Mesa</h3>
-              <p>Precio</p>
             </div>
 
             <div class="product__price">
+              <p>Precio</p>
               <span>$5500</span>
             </div>
+            <button>Comprar</button>
           </div>
 
           <!-- PRODUCTO 3 -->
 
           <div class="product">
-            <img src="./assets/productos/flores_secas.png" alt="Ramo" class="img_product" />
+            <img src="./assets/productos/flores secas.jpg" alt="Ramo" class="img_product" />
 
             <div class="product__info">
               <h3>Flores Secas</h3>
-              <p>Precio</p>
             </div>
 
             <div class="product__price">
-              <span>$3000</span>
+              <p>Precio</p>
+              <span>$6000</span>
             </div>
+            <button>Comprar</button>
           </div>
 
           <!-- PRODUCTO 4 -->
           <div class="product">
-            <img src="./assets/productos/ramo_novia.jpg" alt="Ramo" class="img_product" />
+            <img src="./assets/productos/ramo de novia.jpg" alt="Ramo" class="img_product" />
 
             <div class="product__info">
               <h3>Ramos de Novia</h3>
-              <p>Precio</p>
             </div>
 
             <div class="product__price">
-              <span>$7000</span>
+              <p>Precio</p>
+              <span>$12000</span>
             </div>
+            <button>Comprar</button>
           </div>
 
           <!-- PRODUCTO 5 -->
           <div class="product">
-            <img src="./assets/productos/producto_ramo de flores.jpg" alt="Ramo" class="img_product" />
+            <img src="./assets/productos/souvenirs.jpg" alt="Ramo" class="img_product" />
 
             <div class="product__info">
-              <h3>Decoración</h3>
-              <p>Precio</p>
+              <h3>Souvenirs</h3>
             </div>
 
             <div class="product__price">
-              <span>$7000</span>
+              <p>Precio</p>
+              <span>$8000</span>
             </div>
+            <button>Comprar</button>
           </div>
 
           <!-- PRODUCTO 6 -->
           <div class="product">
-            <img src="./assets/productos/producto_ramo de flores.jpg" alt="Ramo" class="img_product" />
+            <img src="./assets/productos/velas de soja.jpg" alt="Ramo" class="img_product" />
 
             <div class="product__info">
-              <h3>Ramos de Flores</h3>
-              <p>Precio</p>
+              <h3>Velas de soja</h3>
             </div>
 
             <div class="product__price">
+              <p>Precio</p>
               <span>$7000</span>
             </div>
+            <button>Comprar</button>
           </div>
         </div>
-        <button>Ver más</button>
+        <button class="productos_mas">Ver más</button>
       </section>
 
       <section id="servicios">
@@ -189,7 +195,7 @@
             <ul>
               <li>Suscripción mensual:</li>
             </ul>
-            <p>Suscribite a nuestro envío mensual donde vas a recibir una caja llena de sorpresa y distintos productos de nuestra tienda. Todos los meses vas a recibir algo diferente, entre ramos de flores, decoraciones para tu hogar y mucho más! Además vas a juntar puntos y obtener descuentos para tus compras.</p>
+            <p>Suscribite a nuestro envío mensual donde vas a recibir una caja llena de sorpresas y distintos productos de nuestra tienda. Todos los meses vas a recibir algo diferente; ramos de flores, decoraciones para tu hogar y mucho más! Además vas a obtener descuentos para tus futuras compras.</p>
 
             <ul>
               <li>Tienda abierta todo el año:</li>
@@ -223,32 +229,47 @@
 
     <footer id="contacto">
       <div class="contacto_container">
-        <form class="formulario">
-          <h3>Dejanos tu mensaje</h3>
+        <div class="contacto_top">
+          <form class="formulario">
+            <h3>Dejanos tu mensaje</h3>
 
-          <div class="form_top">
-            <input type="text" placeholder="Nombre" required />
-            <input type="text" placeholder="Apellido" />
+            <div class="form_top">
+              <input type="text" placeholder=" Nombre" required />
+              <input type="text" placeholder=" Apellido" />
+            </div>
+
+            <div class="form_bottom">
+              <input type="number" placeholder=" Teléfono" />
+              <input type="email" placeholder=" Email" required />
+            </div>
+            <textarea name="" id="" rows="10" maxlength="500" placeholder="  Dejanos tu mensaje" required></textarea>
+            <input type="submit" value="Enviar" class="form_submit" />
+          </form>
+
+          <div class="contacto_info">
+            <ul>
+              <li><i class="fa-solid fa-location-dot"></i> Av. Juan Bautista Justo 2487</li>
+              <li><i class="fa-solid fa-clock"></i> Lunes a Sábado de 9 a 19 hs</li>
+              <li><i class="fa-solid fa-phone"></i> 011 59646882</li>
+              <li><i class="fa-solid fa-envelope"></i> info@mariapia.com</li>
+            </ul>
           </div>
+        </div>
 
-          <div class="form_bottom">
-            <input type="number" placeholder="Teléfono" />
-            <input type="email" placeholder="Email" required />
+        <div class="redes">
+          <p>Seguinos en las redes!</p>
+
+          <div class="redes_links">
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+
+            <a href="https://es-la.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+
+            <a href="https://www.whatsapp.com/?lang=es_LA"><i class="fa-brands fa-whatsapp"></i></a>
+
+            <a href="https://www.tiktok.com/es/"><i class="fa-brands fa-tiktok"></i></a>
           </div>
-          <textarea name="" id="" rows="10" maxlength="500" required></textarea>
-          <input type="submit" value="Enviar" />
-        </form>
-
-        <div class="contacto_info">
-          <ul>
-            <li><i class="fa-solid fa-location-dot"></i> Av. Juan Bautista Justo 2487</li>
-            <li><i class="fa-solid fa-clock"></i> Lunes a Sábado de 9 a 19 hs</li>
-            <li><i class="fa-solid fa-phone"></i> 011 59646882</li>
-            <li><i class="fa-solid fa-envelope"></i> info@mariapia.com</li>
-          </ul>
         </div>
       </div>
-
       <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d205.27529601921532!2d-58.44345160524346!3d-34.59392567254027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5f5a2135cb5%3A0x1612b4fdf501efbb!2sAv.%20Juan%20Bautista%20Justo%202487%2C%20C1414CXA%20CABA!5e0!3m2!1ses!2sar!4v1691275880833!5m2!1ses!2sar" width="800" height="300" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
