@@ -419,6 +419,7 @@ span {
 }
 
 .servicios__container {
+  margin: 0 auto;
   padding: 2rem;
   max-width: 1200px;
   border: 1px solid var(--claro);
