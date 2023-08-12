@@ -530,7 +530,11 @@ span {
   flex-direction: column;
   max-width: 1200px;
   padding-bottom: 1rem;
-  border-bottom: 1px solid var(--violeta);
+}
+
+#contacto span {
+  width: 60%;
+  border: 1px solid var(--lavanda);
 }
 
 .formulario {
