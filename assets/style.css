@@ -309,6 +309,7 @@ header {
   background: var(--violeta);
   margin: 0 auto;
   text-align: center;
+  width: 100%;
 }
 
 #productos h1 {
@@ -316,6 +317,14 @@ header {
   font-family: "Caveat";
   font-size: 3rem;
   padding: 5rem 0;
+}
+
+.productos__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
 }
 
 .product {
@@ -332,14 +341,6 @@ header {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-}
-
-.productos__container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 3rem;
 }
 
 .product__info h3 {
@@ -360,6 +361,7 @@ span {
 }
 
 .img_product {
+  padding: 1rem;
   width: 300px;
   max-height: 300px;
   min-height: 300px;

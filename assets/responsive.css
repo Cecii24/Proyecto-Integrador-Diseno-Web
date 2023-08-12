@@ -10,6 +10,10 @@
   .servicios_info {
     text-align: center;
   }
+
+  .productos__container {
+    margin: 0 1rem;
+  }
 }
 
 /* -------------------- 992 -------------------- */
@@ -35,6 +39,9 @@
     width: 100%;
   }
 
+  .productos__container {
+    margin: 0 5rem;
+  }
   .nosotros__container {
     flex-direction: column;
     height: auto;
