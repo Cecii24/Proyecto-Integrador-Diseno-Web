@@ -151,7 +151,7 @@ header {
   display: none;
   background: white;
   border: 2px solid var(--violeta);
-  width: 40%;
+  width: 50%;
 }
 
 #toggle-cart:checked + .cart {
@@ -514,6 +514,7 @@ span {
 }
 
 .formulario {
+  margin: 0 auto;
   flex-direction: column;
   padding: 2rem;
   gap: 1rem;
