@@ -7,12 +7,17 @@
     flex-direction: column;
     gap: 2rem;
   }
+
+  .productos__container {
+    margin: 0 1rem;
+  }
+
   .servicios_info {
     text-align: center;
   }
 
-  .productos__container {
-    margin: 0 1rem;
+  .servicios__container {
+    overflow: hidden;
   }
 }
 
