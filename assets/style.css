@@ -401,13 +401,16 @@ span {
 /* -------------------------------- SERVICIOS -------------------------------- */
 
 #servicios {
-  margin: 7rem 5rem;
+  width: 100%;
+  margin: 3rem auto;
   padding: 3rem;
-  border: 1px solid var(--claro);
 }
+
+#servicios,
 .servicios__container,
 .servicios_imagen,
-.servicios_info {
+.servicios_info,
+.container_info {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -416,6 +419,8 @@ span {
 .servicios__container {
   padding: 2rem;
   max-width: 1200px;
+  border: 1px solid var(--claro);
+  flex-direction: column;
 }
 
 #servicios h1 {
@@ -451,6 +456,16 @@ span {
 #nosotros {
   margin-top: 200px;
   background: var(--violeta);
+  width: 100%;
+}
+
+#nosotros,
+.nosotros__container,
+.nosotros_texto,
+.nosotros_imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nosotros__container {
@@ -458,13 +473,10 @@ span {
   max-width: 1000px;
   height: 450px;
   padding: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 2rem;
 }
 
-.nosotros__container img {
+.nosotros_imagen img {
   width: 350px;
   border: 1px solid var(--beige);
 }
@@ -484,10 +496,7 @@ span {
 }
 
 .nosotros_texto {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 /* -------------------------------- CONTACTO -------------------------------- */
@@ -495,18 +504,27 @@ span {
 #contacto {
   margin: 100px auto;
   padding: 3rem;
+  width: 100%;
+  flex-direction: column;
 }
 
+#contacto,
 .contacto_container,
 .contacto_top,
 .formulario,
-.map {
+.map,
+.contacto_info {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.contacto_top {
+  gap: 2rem;
+}
+
 .contacto_container {
+  padding: 3rem;
   flex-direction: column;
   max-width: 1200px;
   padding-bottom: 1rem;
@@ -514,6 +532,7 @@ span {
 }
 
 .formulario {
+  width: 100%;
   margin: 0 auto;
   flex-direction: column;
   padding: 2rem;
@@ -527,7 +546,7 @@ span {
 }
 
 .contacto_info {
-  padding: 3rem;
+  width: 100%;
   font-size: 14px;
 }
 
@@ -600,6 +619,7 @@ input {
 }
 
 .map {
+  width: 100%;
   margin-top: 5rem;
 }
 

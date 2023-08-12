@@ -3,14 +3,13 @@
 /* -------------------- 1200 -------------------- */
 
 @media (max-width: 1200px) {
-  .servicios__container {
+  .container_info {
     flex-direction: column;
     gap: 2rem;
   }
-}
-
-.servicios_info {
-  text-align: center;
+  .servicios_info {
+    text-align: center;
+  }
 }
 
 /* -------------------- 992 -------------------- */
@@ -35,6 +34,16 @@
   .servicios_info p {
     width: 100%;
   }
+
+  .nosotros__container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .nosotros__container img {
+    width: 80%;
+  }
+
   .contacto_top {
     flex-direction: column;
   }
@@ -55,5 +64,22 @@
   .servicios_imagen img {
     width: 250px;
     object-fit: cover;
+  }
+
+  /* FOOTER FORM */
+
+  .form_top,
+  .form_bottom {
+    flex-direction: column;
+  }
+
+  .form_top input,
+  .form_bottom input {
+    width: 200px;
+  }
+
+  textarea {
+    min-width: 300px;
+    max-width: 300px;
   }
 }
