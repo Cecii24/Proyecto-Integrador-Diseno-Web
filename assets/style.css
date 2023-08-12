@@ -26,7 +26,7 @@ H1: font-family: "Caveat";
   text-decoration: none;
   list-style: none;
   font-family: "Hind Madurai", sans-serif;
-  /* border: 1px solid crimson; */
+  border: 1px solid crimson;
 }
 
 /* -------------------------------- HEADER -------------------------------- */
@@ -533,7 +533,7 @@ span {
 }
 
 #contacto span {
-  width: 60%;
+  width: 80%;
   border: 1px solid var(--lavanda);
 }
 
