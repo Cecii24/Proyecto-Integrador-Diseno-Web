@@ -1,0 +1,59 @@
+/* -------------------------------- MEDIA QUERIES -------------------------------- */
+
+/* -------------------- 1200 -------------------- */
+
+@media (max-width: 1200px) {
+  .servicios__container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.servicios_info {
+  text-align: center;
+}
+
+/* -------------------- 992 -------------------- */
+
+@media (max-width: 992px) {
+  .hero__container p {
+    width: 80%;
+  }
+
+  .about_info_container {
+    flex-direction: column;
+  }
+
+  .container__cajas {
+    padding: 1rem;
+  }
+}
+
+/* -------------------- 768 -------------------- */
+
+@media (max-width: 768px) {
+  .servicios_info p {
+    width: 100%;
+  }
+  .contacto_top {
+    flex-direction: column;
+  }
+}
+
+/* -------------------- 576 -------------------- */
+
+@media (max-width: 576px) {
+  .hero__container h1 {
+    font-size: 3rem;
+  }
+  .hero__container p {
+    font-size: 1.2rem;
+  }
+  #servicios {
+    margin: 5rem 1rem;
+  }
+  .servicios_imagen img {
+    width: 250px;
+    object-fit: cover;
+  }
+}

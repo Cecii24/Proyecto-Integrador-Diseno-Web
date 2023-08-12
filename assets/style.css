@@ -51,7 +51,6 @@ header {
 }
 
 .navbar__list {
-  padding-right: 15rem;
   display: flex;
   gap: 1rem;
 }
@@ -99,7 +98,7 @@ header {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .navbar ul {
     background: var(--grisaseo);
     width: 100%;
@@ -258,6 +257,12 @@ header {
 
 #about_info {
   margin: 7rem auto;
+}
+
+#about_info,
+.about_info_container,
+.container__cajas,
+.cajas__info {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -268,22 +273,16 @@ header {
 }
 
 .about_info_container {
+  padding: 0 1rem;
   max-width: 1200px;
-  display: flex;
   gap: 1rem;
 }
 
 .container__cajas {
   width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .cajas__info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   text-align: center;
   gap: 0.5rem;
@@ -404,14 +403,19 @@ span {
 #servicios {
   margin: 7rem 5rem;
   padding: 3rem;
-  flex-direction: column;
   border: 1px solid var(--claro);
+}
+.servicios__container,
+.servicios_imagen,
+.servicios_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .servicios__container {
   padding: 2rem;
   max-width: 1200px;
-  display: flex;
 }
 
 #servicios h1 {
@@ -422,10 +426,7 @@ span {
 }
 
 .servicios_info {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 2rem;
 }
 
@@ -603,4 +604,11 @@ input {
 
 i {
   color: var(--violeta);
+}
+
+.copyright,
+.copyright a {
+  text-align: center;
+  font-size: 12px;
+  color: var(--lavanda);
 }
