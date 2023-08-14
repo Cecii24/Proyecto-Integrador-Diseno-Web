@@ -46,7 +46,7 @@ body {
 
 .form__top {
   position: relative;
-  right: 270px;
+  right: 250px;
   bottom: 30px;
   font-size: 10px;
   color: var(--grisaseo);
@@ -54,14 +54,14 @@ body {
 
 .form__container {
   max-width: 1200px;
-  padding: 3rem 5rem;
+  padding: 3rem 3rem;
   background: var(--grisaseo);
   gap: 1.5rem 3rem;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .formulario {
-  padding: 3rem 0rem;
+  padding: 1rem 0rem;
   gap: 1.5rem;
 }
 
@@ -153,6 +153,7 @@ i {
 
 @media (max-width: 768px) {
   .form__container {
+    margin-top: 1rem;
     padding: 1rem;
   }
 
@@ -163,22 +164,13 @@ i {
 }
 
 @media (max-width: 576px) {
-  .form__container {
-    background: var(--violeta);
-  }
-
   .datos_personales,
   .datos_acceso,
   .datos_contacto {
     flex-direction: column;
-    max-height: 100vh;
   }
 
   .login__button {
     width: 100%;
-  }
-
-  .login__button:hover {
-    background: var(--grisaseo);
   }
 }
