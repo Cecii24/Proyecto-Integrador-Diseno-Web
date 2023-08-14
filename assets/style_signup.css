@@ -18,7 +18,7 @@
   /* border: 1px solid crimson; */
 }
 
-/* -------------------------------- LOGIN -------------------------------- */
+/* -------------------------------- SIGN UP -------------------------------- */
 
 body {
   /* overflow: hidden; */
@@ -147,4 +147,15 @@ input:focus {
 i {
   color: var(--lavanda);
   font-size: 10px;
+}
+
+/* -------------------------------- RESPONSIVE -------------------------------- */
+
+@media (max-width: 992px) {
+  .datos_personales,
+  .datos_acceso,
+  .datos_contacto {
+    flex-direction: column;
+    max-height: 100vh;
+  }
 }
