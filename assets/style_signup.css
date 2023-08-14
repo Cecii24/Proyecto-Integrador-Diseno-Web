@@ -21,25 +21,32 @@
 /* -------------------------------- LOGIN -------------------------------- */
 
 body {
+  /* overflow: hidden; */
   background: var(--violeta);
 }
 
 #login {
   height: 100vh;
+  width: 100%;
 }
 
 .form__container,
 .formulario,
-#login {
+#login,
+.form__bottom {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.form__container,
+.formulario {
   flex-direction: column;
 }
 
 .form__top {
   position: relative;
-  right: 180px;
+  right: 270px;
   bottom: 30px;
   font-size: 10px;
   color: var(--grisaseo);
@@ -49,11 +56,12 @@ body {
   max-width: 1200px;
   padding: 3rem 5rem;
   background: var(--grisaseo);
-  gap: 2rem 3rem;
+  gap: 1.5rem 3rem;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .formulario {
+  padding: 3rem 0rem;
   gap: 1.5rem;
 }
 
@@ -61,8 +69,14 @@ body {
   width: 100%;
   padding: 1rem;
   border-top: 2px solid var(--beige);
-  display: flex;
   gap: 0.5rem;
+}
+
+.datos_personales,
+.datos_acceso,
+.datos_contacto {
+  display: flex;
+  gap: 1rem;
 }
 
 input {
@@ -86,8 +100,9 @@ p,
   color: var(--claro);
 }
 
+.form__top i:hover,
 .form__bottom a:hover {
-  font-weight: 600;
+  color: var(--beige);
   text-decoration: underline;
   transition: 0.1s ease;
   -webkit-transition: 0.1s ease;
@@ -101,7 +116,8 @@ p,
   color: var(--violeta);
   background: var(--beige);
   text-transform: uppercase;
-  width: 100%;
+  width: 80%;
+
   padding: 0.7rem;
 }
 

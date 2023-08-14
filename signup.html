@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Estudio Floral María Pía</title>
-    <link rel="stylesheet" href="./assets/style-user-page.css" />
+    <link rel="stylesheet" href="./assets/style_signup.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="shortcut icon" href="./assets/favicon_io/favicon-32x32.png" type="image/x-icon" />
   </head>
   <body>
     <section id="login">
@@ -16,10 +17,18 @@
 
         <h2>Regístrate</h2>
         <form class="formulario">
-          <input type="text" name="nombre" id="nombre" placeholder="Nombre" required />
-          <input type="text" name="apellido" id="apellido" placeholder="Apellido" required />
-          <input type="email" name="email" id="email" placeholder="Email" required />
-          <input type="password" name="password" id="password" placeholder="Contraseña" required />
+          <div class="datos_personales">
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" required />
+            <input type="text" name="apellido" id="apellido" placeholder="Apellido" required />
+          </div>
+          <div class="datos_contacto">
+            <input type="text" name="direccion" id="direccion" placeholder="Direccion" required />
+            <input type="number" name="telefono" id="telefono" placeholder="Teléfono" required />
+          </div>
+          <div class="datos_acceso">
+            <input type="email" name="email" id="email" placeholder="Email" required />
+            <input type="password" name="password" id="password" placeholder="Contraseña" required />
+          </div>
           <input type="submit" value="Ingresar" class="login__button" />
         </form>
         <div class="form__bottom">
