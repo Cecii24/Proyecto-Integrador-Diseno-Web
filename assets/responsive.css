@@ -16,82 +16,81 @@
     text-align: center;
   }
 
-  .servicios__container {
-    overflow: hidden;
-  }
-}
+  /* -------------------- 992 -------------------- */
 
-/* -------------------- 992 -------------------- */
+  @media (max-width: 992px) {
+    .hero__container p {
+      width: 80%;
+    }
 
-@media (max-width: 992px) {
-  .hero__container p {
-    width: 80%;
-  }
+    .about_info_container {
+      flex-direction: column;
+    }
 
-  .about_info_container {
-    flex-direction: column;
-  }
-
-  .container__cajas {
-    padding: 1rem;
-  }
-}
-
-/* -------------------- 768 -------------------- */
-
-@media (max-width: 768px) {
-  .servicios_info p {
-    width: 100%;
+    .container__cajas {
+      padding: 1rem;
+    }
   }
 
-  .productos__container {
-    margin: 0 5rem;
-  }
-  .nosotros__container {
-    flex-direction: column;
-    height: auto;
+  /* -------------------- 768 -------------------- */
+
+  @media (max-width: 768px) {
+    .servicios_info p {
+      width: 100%;
+    }
+
+    .productos__container {
+      margin: 0 5rem;
+    }
+    .nosotros__container {
+      flex-direction: column;
+      height: auto;
+    }
+
+    .nosotros__container img {
+      width: 80%;
+    }
+
+    .contacto_container {
+      padding: 0rem;
+      max-width: 500px;
+    }
+
+    .contacto_top {
+      flex-direction: column;
+    }
   }
 
-  .nosotros__container img {
-    width: 80%;
-  }
+  /* -------------------- 576 -------------------- */
 
-  .contacto_top {
-    flex-direction: column;
-  }
-}
+  @media (max-width: 576px) {
+    .hero__container h1 {
+      font-size: 3rem;
+    }
+    .hero__container p {
+      font-size: 1.2rem;
+    }
 
-/* -------------------- 576 -------------------- */
+    .servicios_imagen img {
+      width: 250px;
+      object-fit: cover;
+    }
 
-@media (max-width: 576px) {
-  .hero__container h1 {
-    font-size: 3rem;
-  }
-  .hero__container p {
-    font-size: 1.2rem;
-  }
-  #servicios {
-    margin: 5rem 1rem;
-  }
-  .servicios_imagen img {
-    width: 250px;
-    object-fit: cover;
-  }
+    /* FOOTER FORM */
 
-  /* FOOTER FORM */
+    .form_top,
+    .form_bottom {
+      flex-direction: column;
+    }
 
-  .form_top,
-  .form_bottom {
-    flex-direction: column;
-  }
+    .form_top input,
+    .form_bottom input {
+      width: 200px;
+    }
 
-  .form_top input,
-  .form_bottom input {
-    width: 200px;
-  }
-
-  textarea {
-    min-width: 300px;
-    max-width: 300px;
+    textarea {
+      min-width: 300px;
+      max-width: 300px;
+    }
   }
 }

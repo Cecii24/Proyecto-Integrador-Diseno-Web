@@ -1,0 +1,94 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.hero__container h1,
+.hero__container__buttons,
+.hero__container p,
+.about_info_container {
+  animation: fade 1s ease-in 0s 1 normal forwards;
+  -webkit-animation: fade 1s ease-in 0s 1 normal forwards;
+}
+
+.about_info_container {
+  animation: slide-up ease-in 1s;
+  -webkit-animation: slide-up ease-in 1s;
+}
+
+.navbar__list a:hover {
+  transition: ease-in;
+  box-shadow: var(--violeta) 0px 5px 15px;
+  background: var(--claro);
+  color: var(--violeta);
+  -webkit-transition: ease-in;
+  -moz-transition: ease-in;
+  -ms-transition: ease-in;
+  -o-transition: ease-in;
+  cursor: pointer;
+}
+
+.navbar__list a:enabled {
+  transition: ease-in;
+  -webkit-transition: ease-in;
+  -moz-transition: ease-in;
+  -ms-transition: ease-in;
+  -o-transition: ease-in;
+}
+
+.hero__container__buttons a:hover {
+  background: var(--grisaseo);
+  color: var(--beige);
+  border: none;
+  transition: ease-in;
+  -webkit-transition: ease-in;
+  -moz-transition: ease-in;
+  -ms-transition: ease-in;
+  -o-transition: ease-in;
+  cursor: pointer;
+}
+
+.productos_mas:hover {
+  background: var(--grisaseo);
+  color: var(--beige);
+  border: 1px solid var(--lavanda);
+  transition: ease-in 0.5s;
+  -webkit-transition: ease-in 0.5s;
+  -moz-transition: ease-in 0.5s;
+  -ms-transition: ease-in 0.5s;
+  -o-transition: ease-in 0.5s;
+  cursor: pointer;
+}
+
+.product button:hover {
+  cursor: pointer;
+  background: var(--beige);
+  color: var(--violeta);
+  border: 1px solid var(--grisaseo);
+  font-weight: 800;
+  transition: ease-in 0.3s;
+  -webkit-transition: ease-in 0.3s;
+  -moz-transition: ease-in 0.3s;
+  -ms-transition: ease-in 0.3s;
+  -o-transition: ease-in 0.3s;
+}

@@ -26,7 +26,7 @@ H1: font-family: "Caveat";
   text-decoration: none;
   list-style: none;
   font-family: "Hind Madurai", sans-serif;
-  border: 1px solid crimson;
+  /* border: 1px solid crimson; */
 }
 
 /* -------------------------------- HEADER -------------------------------- */
@@ -41,6 +41,7 @@ header {
   top: 0;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
 }
 
 .navbar {
@@ -151,7 +152,7 @@ header {
   display: none;
   background: white;
   border: 2px solid var(--violeta);
-  width: 50%;
+  width: 40%;
 }
 
 #toggle-cart:checked + .cart {
@@ -325,6 +326,8 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 3rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .product {
