@@ -151,11 +151,34 @@ i {
 
 /* -------------------------------- RESPONSIVE -------------------------------- */
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
+  .form__container {
+    padding: 1rem;
+  }
+
+  .form__top {
+    right: 215px;
+    bottom: 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  .form__container {
+    background: var(--violeta);
+  }
+
   .datos_personales,
   .datos_acceso,
   .datos_contacto {
     flex-direction: column;
     max-height: 100vh;
+  }
+
+  .login__button {
+    width: 100%;
+  }
+
+  .login__button:hover {
+    background: var(--grisaseo);
   }
 }
