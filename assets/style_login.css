@@ -138,3 +138,11 @@ i {
   color: var(--lavanda);
   font-size: 10px;
 }
+
+/* -------------------------------- RESPONSIVE -------------------------------- */
+
+@media (max-width: 992px) {
+  .form__container {
+    width: 80%;
+  }
+}
