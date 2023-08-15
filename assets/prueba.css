@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400&family=Lora:ital,wght@0,400;1,400;1,500&family=Signika:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+
+:root {
+  --violeta: #22223b;
+  --grisaseo: #4a4e69;
+  --lavanda: #9a8c98;
+  --claro: #c9ada7;
+  --beige: #f2e9e4;
+}
+
+/* -------------------------------- RESET -------------------------------- */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Hind Madurai", sans-serif;
+  /* border: 1px solid crimson; */
+}
+
+/* -------------------------------- SIGNUP -------------------------------- */
+
+body {
+  color: var(--beige);
+  background: var(--violeta);
+}
+
+#signup {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__container {
+  background: var(--grisaseo);
+}
+
+.form__container,
+.formulario {
+  padding-block: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input {
+  background: var(--beige);
+  padding: 0.3rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  outline: none;
+  border: 2px solid var(--claro);
+}

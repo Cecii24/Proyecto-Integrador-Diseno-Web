@@ -26,6 +26,7 @@ body {
 }
 
 #login {
+  position: static;
   height: 100vh;
   width: 100%;
 }
@@ -45,9 +46,9 @@ body {
 }
 
 .form__top {
-  position: relative;
-  right: 250px;
-  bottom: 30px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
   font-size: 10px;
   color: var(--grisaseo);
 }
@@ -151,27 +152,8 @@ i {
 
 /* -------------------------------- RESPONSIVE -------------------------------- */
 
-@media (max-width: 768px) {
+/* @media (max-width: 992px) {
   .form__container {
-    margin-top: 1rem;
-    padding: 1rem;
+    width: 80%;
   }
-
-  .form__top {
-    right: 215px;
-    bottom: 0px;
-  }
-}
-
-@media (max-width: 576px) {
-  .datos_personales,
-  .datos_acceso,
-  .datos_contacto {
-    flex-direction: column;
-    max-height: 100vh;
-  }
-
-  .login__button {
-    width: 100%;
-  }
-}
+} */
