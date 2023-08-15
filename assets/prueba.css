@@ -121,6 +121,10 @@ a {
 /* -------------------------------- SIGNUP RESPONSIVE -------------------------------- */
 
 @media (max-width: 992px) {
+  body {
+    height: 100vh;
+  }
+
   .datos_personales,
   .datos_contacto,
   .datos_acceso {
