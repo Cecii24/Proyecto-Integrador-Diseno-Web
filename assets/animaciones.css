@@ -92,3 +92,16 @@ html {
   -ms-transition: ease-in 0.3s;
   -o-transition: ease-in 0.3s;
 }
+
+.form_submit:hover {
+  cursor: pointer;
+  background: var(--violeta);
+  border: none;
+  color: var(--beige);
+  text-transform: uppercase;
+  transition: ease-in 0.5s;
+  -webkit-transition: ease-in 0.5s;
+  -moz-transition: ease-in 0.5s;
+  -ms-transition: ease-in 0.5s;
+  -o-transition: ease-in 0.5s;
+}

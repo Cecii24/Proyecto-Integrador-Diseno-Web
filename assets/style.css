@@ -606,7 +606,8 @@ input {
 .form_submit {
   padding: 0.5rem 2rem;
   outline: none;
-  background: var(--violeta);
+  border: none;
+  background: var(--lavanda);
   color: var(--beige);
 }
 

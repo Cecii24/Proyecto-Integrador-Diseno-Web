@@ -21,14 +21,15 @@
   /* border: 1px solid crimson; */
 }
 
-/* -------------------------------- SIGNUP -------------------------------- */
+/* -------------------------------- USER PAGES -------------------------------- */
 
 body {
   color: var(--beige);
   background: var(--violeta);
 }
 
-#signup {
+#signup,
+#login {
   margin: 0 auto;
   height: 100vh;
   display: flex;
@@ -45,6 +46,7 @@ body {
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .form__container,
@@ -118,7 +120,7 @@ a {
   font-style: italic;
 }
 
-/* -------------------------------- SIGNUP RESPONSIVE -------------------------------- */
+/* -------------------------------- RESPONSIVE -------------------------------- */
 
 @media (max-width: 992px) {
   body {
@@ -134,4 +136,21 @@ a {
   .formulario {
     gap: 0.3rem;
   }
+}
+
+/* -------------------------------- ANIMACIONES -------------------------------- */
+
+input:focus {
+  background: #2b2b4a;
+  border: 2px solid var(--beige);
+}
+
+.login__button:hover {
+  cursor: pointer;
+  background: #2b2b4a;
+  border: none;
+}
+
+.form__bottom a:hover {
+  color: var(--claro);
 }
